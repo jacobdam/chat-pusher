@@ -1,0 +1,17 @@
+{
+  "name": "samplechat",
+  "description": "Sample Chat Application",
+  "version": "0.0.0",
+  "repository": {
+    "url": ""
+  },
+  "directories": {
+    "lib": "src"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+     "faye": "~0.6.1"
+  }
+}
