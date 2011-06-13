@@ -1,8 +1,6 @@
-var http = require('http');
+var Faye   = require('faye');
 
-var port = process.env.PORT || 4000;
 
-http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('Hello World\n');
-}).listen(port, "0.0.0.0");
+var server = new Faye.NodeAdapter({mount: '/faye'});
+
+server.listen(process.env.PORT || 8000);
