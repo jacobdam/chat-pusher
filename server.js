@@ -1,5 +1,4 @@
-var http = require('http'),
-    process = require('process');
+var http = require('http');
 
 var port = process.env.PORT || 4000;
 
